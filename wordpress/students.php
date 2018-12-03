@@ -13,19 +13,19 @@ get_header(); ?>
 
 <?php echo “STUDENTS LIST”;?>
 <?php
-
 global $wpdb;
 $students = $wpdb->get_results("SELECT * FROM SENAI.STUDENTS;");
 
 echo "<br>";
 echo "<table>";
-foreach($students as $student){
-echo "<tr>";
-echo "<td>".$student->NAME."</td>";
-echo "<td>".$student->EMAIL."</td>";
-echo "<td>".$student->PHONE."</td>";
-echo "<td>".$student->COURSE."</td>";
-echo "</tr>";
+foreach($students as $student)
+{
+  echo "<tr>";
+  echo "<td>".$student->NAME."</td>";
+  echo "<td>".$student->EMAIL."</td>";
+  echo "<td>".$student->PHONE."</td>";
+  echo "<td>".$student->COURSE."</td>";
+  echo "</tr>";
 }
 echo "</table>";
 ?>
