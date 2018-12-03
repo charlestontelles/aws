@@ -11,7 +11,7 @@
  */
 get_header(); ?>
 
-<?php echo “STUDENTS LIST”;?>
+<?php echo "STUDENTS LIST";?>
 <?php
 global $wpdb;
 $students = $wpdb->get_results("SELECT * FROM SENAI.STUDENTS;");
